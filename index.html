@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Muhaimin's personal portfolio showcasing computing projects, skills and education.">
+
+    <title>Muhaimin | Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="#home" aria-label="Muhaimin home">
+                M<span>.</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-controls="nav-links"
+                aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a class="nav-link active" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about">About Me</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+
+            <button
+                class="theme-toggle"
+                id="theme-toggle"
+                type="button"
+                aria-label="Switch to light theme">
+                ☀
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- Home -->
+        <section class="hero section" id="home">
+            <div class="container hero-content">
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+                <h1>Hi, I'm <span>Abdul Muhaimin Wong bin Mohd Ikhwan Wong</span></h1>
+
+                <h2 class="hero-subtitle">
+                    I'm a <span id="typing-text">Multimedia Computing Student</span><span
+                    class="typing-cursor"
+                    aria-hidden="true">|</span>
+                </h2>
+
+                <p class="hero-description">
+                    I am passionate about technology, programming and
+                    creating digital solutions. This portfolio showcases
+                    my learning journey, projects and technical skills.
+                </p>
+
+                <div class="hero-buttons">
+                    <a class="button button-primary" href="#projects">
+                        Explore My Projects
+                    </a>
+
+                    <a class="button button-secondary" href="#contact">
+                        Contact Me
+                    </a>
+                </div>
+
+                <p class="hero-note">
+                    Learning, building and improving one project at a time.
+                </p>
+            </div>
+
+            <div class="hero-decoration" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section class="section" id="about">
+            <div class="container">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2 class="section-title">About Me</h2>
+
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="profile-placeholder" aria-hidden="true">
+                            M
+                        </div>
+                        <p class="profile-caption">
+                            Multimedia Computing Student
+                        </p>
+                    </div>
+
+                    <div class="about-content">
+                        <h3>My Learning Journey</h3>
+
+                        <p>
+                            Hello! I'm Abdul Muhaimin Wong bin Mohd Ikhwan Wong, a multimedia computing student 
+                            at Universiti Malaysia Sarawak (UNIMAS). 
+                            I am interested in software development, web
+                            technologies and interactive applications.
+                        </p>
+
+                        <p>
+                            Throughout my studies, I have worked on projects
+                            involving Java, C++, computer graphics and UI/UX
+                            design. I enjoy learning new technologies and
+                            applying my knowledge to solve problems.
+                        </p>
+
+                        <h3 class="skills-heading">Technical Skills</h3>
+
+                        <ul class="skill-list" aria-label="Technical skills">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>OpenGL</li>
+                            <li>UI/UX Design</li>
+                        </ul>
+
+                        <p class="small-note">
+                            These are starter details. Update them to
+                            reflect your actual skills and experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section section-alt" id="projects">
+            <div class="container">
+                <p class="eyebrow">WHAT I'VE WORKED ON</p>
+                <h2 class="section-title">My Projects</h2>
+
+                <p class="section-description">
+                    A selection of programming, design and coursework
+                    projects that demonstrate my learning.
+                </p>
+
+                <!-- JavaScript project filter -->
+                <div class="filter-controls"
+                     aria-label="Filter projects by category">
+                    <button class="filter-btn active"
+                            type="button"
+                            data-filter="all"
+                            aria-pressed="true">
+                        All
+                    </button>
+
+                    <button class="filter-btn"
+                            type="button"
+                            data-filter="programming"
+                            aria-pressed="false">
+                        Programming
+                    </button>
+
+                    <button class="filter-btn"
+                            type="button"
+                            data-filter="design"
+                            aria-pressed="false">
+                        Design
+                    </button>
+
+                    <button class="filter-btn"
+                            type="button"
+                            data-filter="web"
+                            aria-pressed="false">
+                        Web
+                    </button>
+                </div>
+
+                <p id="project-count"
+                   class="project-count"
+                   aria-live="polite">
+                    Showing 5 projects
+                </p>
+
+                <div class="project-grid">
+
+                    <article class="project-card"
+                             data-category="programming">
+                        <div class="project-visual visual-purple"
+                             aria-hidden="true">TETRIS</div>
+
+                        <div class="project-body">
+                            <p class="project-category">Computer Graphics</p>
+                            <h3>Tetris Game</h3>
+
+                            <p>
+                                A block puzzle game developed using C++,
+                                OpenGL and GLUT, featuring piece movement,
+                                line clearing and score tracking. I worked on the 
+                                game logic, rendering and user input handling for the game.
+                            </p>
+
+                            <p class="tech-stack">
+                                C++ · OpenGL · GLUT
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="project-card"
+                             data-category="programming">
+                        <div class="project-visual visual-blue"
+                             aria-hidden="true">JAVA</div>
+
+                        <div class="project-body">
+                            <p class="project-category">Application Development</p>
+                            <h3>Java GUI Application</h3>
+
+                            <p>
+                                A graphical user interface application
+                                developed to practise event handling,
+                                user interaction and Java programming.
+                            </p>
+
+                            <p class="tech-stack">
+                                Java · Swing
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="project-card"
+                             data-category="design">
+                        <div class="project-visual visual-green"
+                             aria-hidden="true">UI / UX</div>
+
+                        <div class="project-body">
+                            <p class="project-category">Interface Design</p>
+                            <h3>RHB Mobile Banking Redesign</h3>
+
+                            <p>
+                                A coursework design project exploring
+                                improvements to mobile banking navigation,
+                                usability and interface layout.
+                            </p>
+
+                            <p class="tech-stack">
+                                UI/UX · Wireframes · Prototyping
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="project-card"
+                             data-category="web">
+                        <div class="project-visual visual-orange"
+                             aria-hidden="true">WEB</div>
+
+                        <div class="project-body">
+                            <p class="project-category">Web Development</p>
+                            <h3>Web Application</h3>
+
+                            <p>
+                                A web application project focused on
+                                structuring pages, presenting information
+                                and creating a user-friendly experience.
+                            </p>
+
+                            <p class="tech-stack">
+                                HTML · CSS · JavaScript
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="project-card"
+                             data-category="programming">
+                        <div class="project-visual visual-red"
+                             aria-hidden="true">C++</div>
+
+                        <div class="project-body">
+                            <p class="project-category">Programming</p>
+                            <h3>Algorithm Implementation</h3>
+
+                            <p>
+                                A project implementing algorithms and
+                                data structures in C++, demonstrating
+                                problem-solving and coding skills.
+                            </p>
+
+                            <p class="tech-stack">
+                                C++ · Algorithms · Data Structures
+                            </p>
+                        </div> 
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="container contact-container">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2 class="section-title">Contact Me</h2>
+
+                <p class="section-description">
+                    Have a question or want to discuss a project?
+                    Feel free to contact me through email.
+                </p>
+                <a class="button button-primary"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=aimin2005.aw@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Email Me
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>
+                &copy; <span id="current-year"></span> Muhaimin.
+                Personal Portfolio.
+            </p>
+
+            <a href="#home">Back to Home ↑</a>
+        </div>
+    </footer>
+
+    <!-- Back-to-top button -->
+    <button id="back-to-top"
+            class="back-to-top"
+            type="button"
+            aria-label="Back to top"
+            title="Back to top"
+            hidden>
+        ↑
+    </button>
+</body>
+</html>
